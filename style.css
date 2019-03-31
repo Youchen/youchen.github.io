@@ -24,6 +24,7 @@ body {
 }
 
 body {
+    background: url("gplaypattern.png");
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
