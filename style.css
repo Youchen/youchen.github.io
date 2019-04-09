@@ -1,9 +1,3 @@
-/* Font import */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-
-
-/* Media query */
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -31,32 +25,7 @@ body {
     justify-content: center;
 }
 
-
-/*________________________________________________ */
-
-.navigation {
-    display: flex;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (width >= 768px) {
-
-    .menu {
-        flex-direction: row
-    }
-}
-
-@media (width >= 768px) {
-    .menu > li:not(:last-child) {
-        margin-right: 40px;
-    }
-}
-
-.menu a {
+a {
     position: relative;
     display: inline-block;
     font-size: 20px;
@@ -67,19 +36,19 @@ body {
     margin-bottom: 15px;
 }
 
-.menu a:hover {
+a:hover {
     color: #aaa;
 
 }
 
-.menu a:hover::after,
-.menu a:hover::before {
+a:hover::after,
+a:hover::before {
     width: 100%;
     left: 0;
 }
 
-.menu a::after,
-.menu a::before {
+a::after,
+a::before {
     content: '';
     position: absolute;
     top: calc(100% + 5px);
@@ -88,12 +57,12 @@ body {
     height: 3px;
 }
 
-.menu a::before {
+a::before {
     transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
     background: #F44336;
 }
 
-.menu a::after {
+a::after {
     transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
     background: #2196f3;
 }
